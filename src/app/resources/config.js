@@ -32,13 +32,13 @@ const effects = {
 const style = {
     theme:       'dark',         // dark | light
     neutral:     'gray',         // sand | gray | slate
-    brand:       'aqua',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'yellow',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'contrast',     // color | contrast
+    brand:       'green',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent:      'emerald',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    solid:       'color',     // color | contrast
     solidStyle:  'flat',         // flat | plastic
-    border:      'playful',      // rounded | playful | conservative
+    border:      'rounded',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent
-    transition:  'all'           // all | micro | macro
+    transition:  'micro'           // all | micro | macro
 }
 
 const display = {

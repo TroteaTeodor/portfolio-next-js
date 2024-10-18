@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Teodor',
+    lastName:  'Trotea',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Applied Computer Science student',
+    avatar:    '/images/avatar_me.jpg',
+    location:  'Europe/Brussels',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Romanian']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/teodortrotea',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/trotea-teodor-138b072b1/',
     },
     {
         name: 'X',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:teodor.trotea@gmail.com',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Applied Computer Science student</>,
+    subline: <>I'm Teodor, a student at <InlineCode>Karel de Grote Hogeschool</InlineCode>, where I learn software engineering.<br/>After courses, I build my own projects.</>
 }
 
 const about = {
@@ -64,15 +64,15 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://cal.com/trotea-teodor/30min'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I'm Trotea Teodor, an Applied Computer Science student at Karel de Grote Hogeschool in Antwerp, Belgium, with a strong background in C++ and Java. I’ve led a robotics team during high school, gaining hands-on experience in teamwork, project management, and cutting-edge technologies like OpenCV. I’m passionate about software development and always eager to learn and grow. Explore my site to learn more about my projects and skills, and feel free to get in touch!</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
@@ -92,16 +92,6 @@ const about = {
                     }
                 ]
             },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
-            }
         ]
     },
     studies: {
@@ -109,12 +99,16 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Karel de Grote Hogeschool',
+                description: <>Studies Applied Computer Science.</>,
+                images: [
+                    {
+                        src: '/images/kdglogo.png',
+                        alt: 'Protected image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
             }
         ]
     },
@@ -123,32 +117,38 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Java',
+                description: <>I am currently studying Java at Karel de Grote Hogeschool since 2024</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/java.png',
                         alt: 'Project image',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
+                ]
+            },
+            {
+                title: 'C++',
+                description: <>I studied C++ for 3 years at National Collage "Spiru Haret" from 2021 to 2024</>,
+                images: [
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/cplus.png',
                         alt: 'Project image',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
                 ]
             },
             {
                 title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                description: <>Building next gen apps with Next.js + Once UI + Supabase since 2024</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/nextjs.png',
                         alt: 'Project image',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
                 ]
             }
@@ -158,14 +158,14 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
+    title: 'Writing about tech...',
     description: `Read what ${person.name} has been up to recently`
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
 }
 
 const work = {
-    label: 'Work',
+    label: 'Work/Projects',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
@@ -181,7 +181,7 @@ const gallery = {
         { 
             src: '/images/gallery/img-01.jpg', 
             alt: 'image',
-            orientation: 'vertical'
+            orientation: 'horizontal'
         },
         { 
             src: '/images/gallery/img-02.jpg', 
@@ -191,7 +191,7 @@ const gallery = {
         { 
             src: '/images/gallery/img-03.jpg', 
             alt: 'image',
-            orientation: 'vertical'
+            orientation: 'horizontal'
         },
         { 
             src: '/images/gallery/img-04.jpg', 
@@ -246,7 +246,7 @@ const gallery = {
         { 
             src: '/images/gallery/img-14.jpg', 
             alt: 'image',
-            orientation: 'horizontal'
+            orientation: 'vertical'
         },
     ]
 }
