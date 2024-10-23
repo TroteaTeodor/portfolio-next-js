@@ -165,6 +165,18 @@ const about = {
                 ]
             },
             {
+                title: 'Linux System Administration',
+                description: <>I am currently learning and following Red Hat System Administration course at Karel de Grote University</>,
+                images: [
+                    {
+                        src: '/images/redhat.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 12
+                    },
+                ]
+            },
+            {
                 title: 'React',
                 description: <>Experienced in using React to build fast, dynamic, and scalable user interfaces. With expertise in component-based development, I create reusable, maintainable code that enhances application performance. Skilled in leveraging React’s virtual DOM and state management, I build modern, responsive web apps that provide seamless user experiences. React is a core tool in my tech stack, enabling me to deliver efficient and innovative solutions.</>,
                 images: [
