@@ -187,6 +187,18 @@ const about = {
                         height: 12
                     },
                 ]
+            },
+            {
+                title: 'Github',
+                description: <>Experienced in using github to manage and colaborate on projects remotely.</>,
+                images: [
+                    {
+                        src: '/images/github.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 12
+                    },
+                ]
             }
         ]
     }
