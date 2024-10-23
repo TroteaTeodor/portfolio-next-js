@@ -178,7 +178,7 @@ const about = {
             },
             {
                 title: 'React',
-                description: <>Experienced in using React to build fast, dynamic, and scalable user interfaces. With expertise in component-based development, I create reusable, maintainable code that enhances application performance. Skilled in leveraging React’s virtual DOM and state management, I build modern, responsive web apps that provide seamless user experiences. React is a core tool in my tech stack, enabling me to deliver efficient and innovative solutions.</>,
+                description: <>I created my personal portfolio website using React, showcasing my skills and projects with a responsive, user-friendly design and dynamic features.</>,
                 images: [
                     {
                         src: '/images/react.jpg',
