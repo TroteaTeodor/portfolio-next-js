@@ -165,18 +165,6 @@ const about = {
                 ]
             },
             {
-                title: 'Linux System Administration',
-                description: <>I am currently learning and following Red Hat System Administration course at Karel de Grote University</>,
-                images: [
-                    {
-                        src: '/images/redhat.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 12
-                    },
-                ]
-            },
-            {
                 title: 'React',
                 description: <>I created my personal portfolio website using React, showcasing my skills and projects with a responsive, user-friendly design and dynamic features.</>,
                 images: [
@@ -194,6 +182,30 @@ const about = {
                 images: [
                     {
                         src: '/images/github.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 12
+                    },
+                ]
+            },
+            {
+                title: 'Typescript',
+                description: <>I am currently learning and following diferent courses on Typescript on my own</>,
+                images: [
+                    {
+                        src: '/images/typescript.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 12
+                    },
+                ]
+            },
+            {
+                title: 'Linux System Administration',
+                description: <>I am currently learning and following Red Hat System Administration course at Karel de Grote University</>,
+                images: [
+                    {
+                        src: '/images/redhat.png',
                         alt: 'Project image',
                         width: 16,
                         height: 12
