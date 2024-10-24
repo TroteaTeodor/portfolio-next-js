@@ -1,6 +1,8 @@
 import { renderContent } from "@/app/resources";
 import { Flex, IconButton, SmartLink, Text } from "@/once-ui/components"
 import { useTranslations } from "next-intl";
+import { Analytics } from "@vercel/analytics/react";
+
 // import { person, social } from '@/app/resources'
 
 export const Footer = () => {
@@ -29,6 +31,7 @@ export const Footer = () => {
                         {person.name}
                     </Text>
                 </Text>
+                <Analytics mode={'production'} />;
                 <Flex
                     gap="16">
                     {social.map((item) => (

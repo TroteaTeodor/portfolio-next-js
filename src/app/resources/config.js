@@ -1,5 +1,4 @@
 const baseURL = 'demo.app'
-
 // Enable localization
 const i18n = false;
 
