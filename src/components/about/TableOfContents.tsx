@@ -1,5 +1,5 @@
 'use client';
-
+import { Analytics } from "@vercel/analytics/react"
 import React from 'react';
 import { Flex, Text } from '@/once-ui/components';
 import styles from './about.module.scss';
@@ -35,6 +35,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ structure, about }) =
     if (!about.tableOfContent.display) return null;
 
     return (
+    
         <Flex
             style={{
                 left: '0',

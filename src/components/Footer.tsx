@@ -31,7 +31,7 @@ export const Footer = () => {
                         {person.name}
                     </Text>
                 </Text>
-                <Analytics mode={'production'} />;
+                <Analytics  />
                 <Flex
                     gap="16">
                     {social.map((item) => (
