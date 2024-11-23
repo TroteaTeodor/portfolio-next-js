@@ -130,6 +130,18 @@ const about = {
                 ]
             },
             {
+                title: 'Python',
+                description: <>I am currently studying Python on my own and posting my projects on Github</>,
+                images: [
+                    {
+                        src: '/images/python.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 12
+                    },
+                ]
+            },
+            {
                 title: 'C++',
                 description: <>I studied C++ for 3 years at National Collage "Spiru Haret" from 2021 to 2024</>,
                 images: [
